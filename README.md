@@ -1,7 +1,8 @@
 # Train Exercise
 
 This code will display a table of rows listing a train line, route, route number, and operator ID, based on data uploaded by a user in the form
-of a .CSV file.
+of a .CSV file. While it is assumed that the user will upload a CSV file that is fully compliant to this format, it does not assume that the 
+file has a header row: it checks for a header row based on the first cell containing the text "TRAIN_LINE."
 
 By default, the table is sorted by run number. The user can sort by train line, route, route number, or operator ID by clicking the corresponding 
 header. If there are more than five rows, the table will be paginated in groups of five, allowing the user to click directlyto a specific page, 
