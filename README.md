@@ -10,4 +10,8 @@ or to advance to the next or previous page, assuming there's one available.
 
 All rows will be unique; should the user upload a file that contains identical rows, the duplicates will be filtered out.
 
+Unit tests are included in the "tests" folder, and the appropriate vendor files should be present in the "vendor" folder as well. The testing 
+assumes using PHPUnit 9.5 and PHP version 8.1. To run the unit tests, use the command line to navigate to the root of the project folder and 
+enter "phpunit tests".
+
 This code can be seen in action at [https://trains.logthedog.com](https://trains.logthedog.com).
