@@ -14,4 +14,9 @@ Unit tests are included in the "tests" folder, and the appropriate vendor files 
 assumes using PHPUnit 9.5 and PHP version 8.1. To run the unit tests, use the command line to navigate to the root of the project folder and 
 enter "phpunit tests".
 
+The "data" folder contains three example CSV files to show the functionality:
+- **trains.csv** - the original data file provided
+- **trains-dupse.csv** - contains duplicate entries, made to demonstrate how the code filters out non-unique entries
+- **trains-multipage.csv** - contains enough entries to trigger pagination for three pages
+
 This code can be seen in action at [https://trains.logthedog.com](https://trains.logthedog.com).
