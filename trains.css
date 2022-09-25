@@ -1,0 +1,50 @@
+body {
+    background-color: #eaeaea;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+th, td {
+    text-align: left;
+    padding-right: 12px;
+}
+
+caption {
+    caption-side: bottom;
+    padding: 12px;
+    text-align: left;
+}
+
+.noLink {
+    text-decoration: none!important;
+    cursor: default!important;
+}
+
+.page {
+    cursor: pointer;
+    font-weight: normal;
+    text-decoration-line: underline;
+    text-decoration-color: #000;
+    text-decoration-style: solid;}
+
+.fakeLink {
+    background: none;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: #000;
+    margin-left: -4px;
+}
+
+/* We'll put the single-line style definitions here */
+
+.fakeLink:focus { outline: none; }
+.inline { display: inline; }
+.previous, .next { color: #eaeaea; }
+.showNext, .showPrev { color: #000; }
+.trRow { clear: both; }
+.trRow>div { float: left; }
+.center { text-align: center; }
+#train_runs { font-family: 'Courier New', Courier, monospace; }
