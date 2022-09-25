@@ -1,7 +1,6 @@
 <?php
 
 namespace TrainsTest;
-use org\bovigo\vfs\vfsStream;
 require dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php';
 
 use PHPUnit\Framework\TestCase;
@@ -9,9 +8,6 @@ use Trains;
 
 class TrainRunsTest extends TestCase { 
 
-    private $_fs_mock;
-    private $_file_mock;
-    
     public function setUp(): void {
         $this->TrainRun = new Trains\TrainRuns();
     }
@@ -22,17 +18,11 @@ class TrainRunsTest extends TestCase {
     }
 
     public function testUploadRuns() {
-        $_SESSION = [];
         $file_content = "TRAIN_LINE, ROUTE_NAME, RUN_NUMBER, OPERATOR_ID\r\n
                 El, Brown Line,E102, SJones\r\n
                 Metra, UPN,M405, AJohnson\r\n
                 Amtrak, Hiawatha,A006, LBeck\r\n";
-        $this->_fs_mock = vfsStream::setup('root',777);
-        $file_test = vfsStream::url('traintest2.csv');
         file_put_contents('traintest2.csv', $file_content);
-        $file = vfsStream::newFile('traintest.csv')
-            ->at($this->_fs_mock)
-            ->setContent($file_content);
         $output = $this->TrainRun->uploadRuns('traintest2.csv');
         $this->assertTrue($output);
 
