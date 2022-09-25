@@ -1,0 +1,16 @@
+TRAIN_LINE, ROUTE_NAME, RUN_NUMBER, OPERATOR_ID
+El, Brown Line,E102, SJones
+Metra, UPN,M405, AJohnson
+Amtrak, Hiawatha,A006, LBeck
+El, Red Line,E432, LHill
+Amtrak, Hiawatha,A005, LBeck
+Metra, ,M623, ESanders
+El, Green Line,E192, GSayers
+Metra, RI,M333, BPiccolo
+Amtrak, California Zephyr,A512, LLopez
+El, Pink Line,E221, RSwanson
+Amtrak, Lake Shore Limited,A040, DSilver
+Metra, Heritage,M723, SRomashko
+Metra, NC, M293, CMunoz
+Amtrak, Capitol Limited, A141, HThorkelson
+El, Blue Line, E802, REscallier
