@@ -18,5 +18,3 @@ The "data" folder contains three example CSV files to show the functionality:
 - **trains.csv** - the original data file provided
 - **trains-dupes.csv** - contains duplicate entries, made to demonstrate how the code filters out non-unique entries
 - **trains-multipage.csv** - contains enough entries to trigger pagination for three pages
-
-This code can be seen in action at [https://trains.logthedog.com](https://trains.logthedog.com).
